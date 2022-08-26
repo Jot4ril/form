@@ -1,14 +1,11 @@
-//import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-//import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-function App() {
+export default function SignUpScreen() {
   return (
-    <div>
-      <h1 className="my-3">Sign Up</h1>;
+    <Container className="small-container">
+      <h1 className="my-3">Sign Up</h1>
       <Form onClick={console.log('Form Submitted')}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>First Name</Form.Label>
@@ -31,8 +28,6 @@ function App() {
         </div>
         <div className="mb-3">Already have an account? </div>
       </Form>
-    </div>
+    </Container>
   );
 }
-
-export default App;
